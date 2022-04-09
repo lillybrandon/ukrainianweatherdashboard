@@ -8,48 +8,48 @@ h1 {
     text-align: center;
 }
 
+
+
 .cities {
     display: grid;
     grid-template-columns: auto auto auto;
     font-size: 1.5em;
     text-align: center;
-    border: 1px #000 solid;
-    position: relative
 }
+
 
 .city1 {
     border: 1px #000 solid;
-    margin-left: 150px;
-    margin-top: 150px;
+    margin-left: 175px;
+    margin-top: 100px;
 }
 
 .city2 {
     border: 1px #000 solid;
     grid-column: 3;
-    margin-right: 150px;
-    margin-top: 150px;
+    margin-right: 175px;
+    margin-top: 100px;
 }
 
 .city3 {
     border: 1px #000 solid;
     box-sizing: border-box;
     margin-top: 200px;
-    margin-bottom: 200px;
-    padding: 60px;
+    margin-bottom: 80px;
 }
 
 .city4 {
     border: 1px #000 solid;
     box-sizing: border-box;
     margin-top: 200px;
-    margin-bottom: 200px;
-    padding: 60px
+    margin-bottom: 80px;
+
 }
 
 .city5 {
     border: 1px #000 solid;
     box-sizing: border-box;
     margin-top: 200px;
-    margin-bottom: 200px;
-    padding: 60px
+    margin-bottom: 80px;
+
 }
