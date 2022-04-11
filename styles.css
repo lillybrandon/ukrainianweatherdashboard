@@ -1,55 +1,80 @@
-
-body {
-    background-color: aliceblue;
+* {
+    padding:0;
+    margin:0;
 }
 
-h1 {
-    text-decoration: underline;
+/*header css */
+
+#header {
+    background-image: url('../images/uaflag.jpg');
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 150px;
+    position: relative;
+}
+
+#header h1 {
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 54px;
+    font-size: 3em;
     text-align: center;
 }
 
-
+/* 5 cities css */
 
 .cities {
     display: grid;
     grid-template-columns: auto auto auto;
-    font-size: 1.5em;
     text-align: center;
+    background-color:#fff;
+    height: 600px;
 }
 
-
-.city1 {
-    border: 1px #000 solid;
-    margin-left: 175px;
-    margin-top: 100px;
+.cities h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
 }
 
-.city2 {
-    border: 1px #000 solid;
+.cities .city-one {
+    margin-left: 250px;
+}
+
+.cities .city-two {
     grid-column: 3;
-    margin-right: 175px;
-    margin-top: 100px;
+    margin-right: 250px;
 }
 
-.city3 {
-    border: 1px #000 solid;
-    box-sizing: border-box;
-    margin-top: 200px;
-    margin-bottom: 80px;
+
+
+/* footer css */
+
+#footer {
+    background-color: #333;
+    position: relative;
+    font-size:1.2em;
+    margin-bottom: auto;
+    height:40px;
 }
 
-.city4 {
-    border: 1px #000 solid;
-    box-sizing: border-box;
-    margin-top: 200px;
-    margin-bottom: 80px;
+
+#footer p {
+    position:absolute;
+    margin-top: 10px;;
+    margin-left: 500px;
+    color:#fff;
+}
+
+a {
+    color: white;
+    cursor: pointer;
+}
+
+a:hover {
+    color:lightblue;
+}
+
+@media (max-width:600px) {
 
 }
 
-.city5 {
-    border: 1px #000 solid;
-    box-sizing: border-box;
-    margin-top: 200px;
-    margin-bottom: 80px;
-
-}
