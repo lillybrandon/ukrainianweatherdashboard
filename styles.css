@@ -29,6 +29,8 @@
     text-align: center;
     background-color:#fff;
     height: 600px;
+    background-image:url("../images/weather.jpg");
+    background-size: cover;
 }
 
 .cities h3 {
@@ -43,6 +45,10 @@
 .cities .city-two {
     grid-column: 3;
     margin-right: 250px;
+}
+
+.cities .city-four {
+    margin: 0 24px;
 }
 
 
