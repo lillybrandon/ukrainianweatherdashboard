@@ -1,9 +1,9 @@
 let weather = {
     apiKey: "23d1d98550e7ba39917485022c6515ec",
-    fetchWeather: function (city) {
+    fetchWeather: function () {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q="
-            + city
+            + "kyiv"
             + "&units=metric&appid=23d1d98550e7ba39917485022c6515ec"
         ).then((response) => response.json())
             .then((data) => this.displayWeather(data));
@@ -16,5 +16,6 @@ let weather = {
         console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".kyiv").innerText = "Current Weather " + temp;
         document.querySelector(".icon").src = "openweathermap.org/img/wn/" + icon + ".png ";
+        document.querySelector(".Kharkiv").innerText = "Current Weather " + temp;
     }
 }
