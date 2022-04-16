@@ -36,7 +36,7 @@ let weather2 = {
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".Kharkiv").innerText = "Current Weather " + temp;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".icon2").src = "https://openweathermap.org/img/wn/" + icon + ".png";
     }
 }
 
@@ -57,7 +57,7 @@ let weather3 = {
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".donetsk").innerText = "Current Weather " + temp;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".icon3").src = "https://openweathermap.org/img/wn/" + icon + ".png";
     }
 }
 
@@ -79,7 +79,7 @@ let weather4 = {
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".odessa").innerText = "Current Weather " + temp;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".icon4").src = "https://openweathermap.org/img/wn/" + icon + ".png";
     }
 }
 
@@ -101,6 +101,6 @@ let weather5 = {
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".dnipro").innerText = "Current Weather " + temp;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".icon5").src = "https://openweathermap.org/img/wn/" + icon + ".png";
     }
 }
