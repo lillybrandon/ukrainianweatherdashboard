@@ -1,10 +1,7 @@
 let weather = {
-    apiKey: "23d1d98550e7ba39917485022c6515ec",
+    apiKey: "791d782095d1952f551df2a3a3b6c954",
     fetchWeather: function () {
-        fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + "kyiv"
-            + "&units=metric&appid=23d1d98550e7ba39917485022c6515ec"
+        fetch( "https://api.openweathermap.org/data/2.5/weather?q=kyiv&appid=791d782095d1952f551df2a3a3b6c954&units=metric&appid=791d782095d1952f551df2a3a3b6c954"
         ).then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
@@ -14,18 +11,23 @@ let weather = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
-        document.querySelector(".kyiv").innerText = "Current Weather " + temp;
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".kyiv").innerText = + temp;
+        document.querySelector(".city__one--icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".city__one--description").innerText = description;
+        document.querySelector(".city__one--temp").innerText = temp + "°C";
+        document.querySelector(".city__one--humidity").innerText =
+        "Humidity: " + humidity + "%";
+        document.querySelector(".city__one--wind").innerText =
+        "Wind speed: " + speed + " km/h";
     }
 }
 
+
 let weather2 = {
-    apiKey: "23d1d98550e7ba39917485022c6515ec",
+    apiKey: "791d782095d1952f551df2a3a3b6c954",
     fetchWeather: function () {
-        fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + "kharkiv"
-            + "&units=metric&appid=23d1d98550e7ba39917485022c6515ec"
+        fetch( "https://api.openweathermap.org/data/2.5/weather?q=kharkiv&appid=791d782095d1952f551df2a3a3b6c954&units=metric&appid=791d782095d1952f551df2a3a3b6c954"
         ).then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
@@ -35,20 +37,22 @@ let weather2 = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
-        document.querySelector(".kharkiv").innerText = "Current Weather " + temp;
-        document.querySelector(".icon2").src = "https://openweathermap.org/img/wn/" + icon + ".png";
-        document.querySelector(".description__two").innerText = description;
-        document.querySelector(".humidity__two").innerText = humidity;
+        document.querySelector(".kharkiv").innerText = + temp;
+        document.querySelector(".city__two--icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".city__two--description").innerText = description;
+        document.querySelector(".city__two--temp").innerText = temp + "°C";
+        document.querySelector(".city__two--humidity").innerText =
+        "Humidity: " + humidity + "%";
+        document.querySelector(".city__two--wind").innerText =
+        "Wind speed: " + speed + " km/h";
     }
 }
 
 let weather3 = {
-    apiKey: "23d1d98550e7ba39917485022c6515ec",
+    apiKey: "791d782095d1952f551df2a3a3b6c954",
     fetchWeather: function () {
-        fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + "donetsk"
-            + "&units=metric&appid=23d1d98550e7ba39917485022c6515ec"
+        fetch( "https://api.openweathermap.org/data/2.5/weather?q=odessa&appid=791d782095d1952f551df2a3a3b6c954&units=metric&appid=791d782095d1952f551df2a3a3b6c954"
         ).then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
@@ -58,19 +62,22 @@ let weather3 = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
-        document.querySelector(".donetsk").innerText = "Current Weather " + temp;
-        document.querySelector(".icon3").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".odessa").innerText = + temp;
+        document.querySelector(".city__three--icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".city__three--description").innerText = description;
+        document.querySelector(".city__three--temp").innerText = temp + "°C";
+        document.querySelector(".city__three--humidity").innerText =
+        "Humidity: " + humidity + "%";
+        document.querySelector(".city__three--wind").innerText =
+        "Wind speed: " + speed + " km/h";
     }
 }
-
 
 let weather4 = {
-    apiKey: "23d1d98550e7ba39917485022c6515ec",
+    apiKey: "791d782095d1952f551df2a3a3b6c954",
     fetchWeather: function () {
-        fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + "odessa"
-            + "&units=metric&appid=23d1d98550e7ba39917485022c6515ec"
+        fetch( "https://api.openweathermap.org/data/2.5/weather?q=donetsk&appid=791d782095d1952f551df2a3a3b6c954&units=metric&appid=791d782095d1952f551df2a3a3b6c954"
         ).then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
@@ -80,19 +87,22 @@ let weather4 = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
-        document.querySelector(".odessa").innerText = "Current Weather " + temp;
-        document.querySelector(".icon4").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".donetsk").innerText = + temp;
+        document.querySelector(".city__four--icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".city__four--description").innerText = description;
+        document.querySelector(".city__four--temp").innerText = temp + "°C";
+        document.querySelector(".city__four--humidity").innerText =
+        "Humidity: " + humidity + "%";
+        document.querySelector(".city__four--wind").innerText =
+        "Wind speed: " + speed + " km/h";
     }
 }
 
-
 let weather5 = {
-    apiKey: "23d1d98550e7ba39917485022c6515ec",
+    apiKey: "791d782095d1952f551df2a3a3b6c954",
     fetchWeather: function () {
-        fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + "dnipro"
-            + "&units=metric&appid=23d1d98550e7ba39917485022c6515ec"
+        fetch( "https://api.openweathermap.org/data/2.5/weather?q=dnipro&appid=791d782095d1952f551df2a3a3b6c954&units=metric&appid=791d782095d1952f551df2a3a3b6c954"
         ).then((response) => response.json())
             .then((data) => this.displayWeather(data));
     },
@@ -102,7 +112,14 @@ let weather5 = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
-        document.querySelector(".dnipro").innerText = "Current Weather " + temp;
-        document.querySelector(".icon5").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".dnipro").innerText = + temp;
+        document.querySelector(".city__five--icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".city__five--description").innerText = description;
+        document.querySelector(".city__five--temp").innerText = temp + "°C";
+        document.querySelector(".city__five--humidity").innerText =
+        "Humidity: " + humidity + "%";
+        document.querySelector(".city__five--wind").innerText =
+        "Wind speed: " + speed + " km/h";
     }
 }

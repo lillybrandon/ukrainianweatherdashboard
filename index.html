@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,57 +8,75 @@
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
 </head>
-
-<body
-    onload="weather.fetchWeather(), weather2.fetchWeather(), weather3.fetchWeather(), weather4.fetchWeather(), weather5.fetchWeather()">
-    <header id=" header">
-        <h1>Weather In 5 Major Ukrainian Cities</h1>
+<body onload="weather.fetchWeather(), weather2.fetchWeather(), weather3.fetchWeather(), weather4.fetchWeather(), weather5.fetchWeather()">
+    <!--HEADER-->
+    <header>
+        <img src="images/uaflag.jpeg" class="header__img"/>
+        <h1>Weather in 5 Major Ukrainian Cities</h1>
     </header>
 
-    <div class="cities">
-        <div class="city-one">
-            <h3>Kyiv</h3>
-            <p class="kyiv"></p>
-            <img class="icon">
-        </div>
-        <div class="city-two">
-            <h3>Kharkiv</h3>
-                <div class="weather">
-                    <p class="kharkiv"></p>
-                    <p class="description__two"></p>
-                    <p class="humidity__two"></p>
-                    <img class="icon2">
+    <main class="weather__cards">
+        <div class="cities__wrapper">
+            <div class="city__one">
+                <h2>Kyiv</h2>
+                <h3 class="city__one--temp kyiv"></h3>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="city__one--icon" />
+                    <div class="city__one--description"></div>
                 </div>
-            <img class="icon2">
+                <div class="city__one--humidity"></div>
+                <div class="city__one--wind"></div>
+            </div>
+            <div class="city__two">
+                <h2>Kharkiv</h2>
+                <h3 class="city__two--temp kharkiv"></h3>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="city__two--icon" />
+                    <div class="city__two--description"></div>
+                </div>
+                <div class="city__two--humidity"></div>
+                <div class="city__two--wind"></div>
+            </div>
+            <div class="city__three">
+                <h2>Odessa</h2>
+                <h3 class="city__three--temp odessa"></h3>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="city__three--icon" />
+                    <div class="city__three--description"></div>
+                </div>
+                <div class="city__three--humidity"></div>
+                <div class="city__three--wind"></div>
+            </div> 
+            <div class="city__four">
+                <h2>Donetsk</h2>
+                <h3 class="city__four--temp donetsk"></h3>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="city__four--icon" />
+                    <div class="city__four--description"></div>
+                </div>
+                <div class="city__four--humidity"></div>
+                <div class="city__four--wind"></div>
+            </div>
+            <div class="city__five">
+                <h2>Dnipro</h2>
+                <h3 class="city__five--temp dnipro"></h3>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="city__five--icon" />
+                    <div class="city__five--description"></div>
+                </div>
+                <div class="city__five--humidity"></div>
+                <div class="city__five--wind"></div>
+            </div>
         </div>
-        <div class="city-three">
-            <h3>Donetsk</h3>
-            <p class="donetsk"></p>
-            <img class="icon3">
-        </div>
-        <div class="city-four">
-            <h3>Odessa</h3>
-            <p class="odessa"></p>
-            <img class="icon4">
-        </div>
-        <div class="city-five">
-            <h3>Dnipro</h3>
-            <p class="dnipro"></p>
-            <img class="icon5">
-        </div>
-    </div>
+    </main>
 
 
+    <!--FOOTER-->
     <footer id="footer">
 
-        <p>A <a title="Brandon's Github" href="https://github.com/lillybrandon"> Brandon</a> & <a title="Kobe's GitHub"
-                class="contributor-two" href="https://github.com/kobelovan"> Kobe</a> Production Copyright &copy; 2022
-            GitHub</p>
-
-
+        <p>A <a title="Brandon's Github" href ="https://github.com/lillybrandon" target="_blank"> Brandon</a> & <a title="Kobe's GitHub" class="contributor-two" href="https://github.com/kobelovan" target="_blank"> Kobe</a> Production Copyright &copy; 2022 GitHub</p>
 
     </footer>
-
+    
 </body>
-
 </html>
