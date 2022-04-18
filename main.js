@@ -35,8 +35,10 @@ let weather2 = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
-        document.querySelector(".Kharkiv").innerText = "Current Weather " + temp;
+        document.querySelector(".kharkiv").innerText = "Current Weather " + temp;
         document.querySelector(".icon2").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        document.querySelector(".description__two").innerText = description;
+        document.querySelector(".humidity__two").innerText = humidity;
     }
 }
 
