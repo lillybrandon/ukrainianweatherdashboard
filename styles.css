@@ -215,35 +215,47 @@ footer {
     }
 }
 
-/* SMALL PHONES, LARGE SMARTPHONES */
+/* SMALL PHONES */
 
-@media (max-width: 550px) {
+@media (max-width: 414px) {
     header {
         width:100%;
+        text-align: center;
     }
 
     h1 {
         font-size: 32px;
     }
 
+    h2 {
+        font-size: 18px;
+    }
+
     h3 {
-        font-size: 16px;
+        font-size: 8px;
     }
 
     .cities__wrapper {
         width: 100%;
     }
 
+    .city__one h2, .city__two h2, .city__three h2, .city__four h2, .city__five h2 {
+        padding: 10px 0 4px 0;
+    }
+
     .city__one,.city__two,.city__three,.city__four,.city__five {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .flex {
         display: flex;
         flex-direction: column;
         margin-left: 0;
-    
+    }
+
+    .flex img {
+        max-height: 40px;
     }
 
     .city__one--temp, .city__two--temp, .city__three--temp, .city__four--temp, .city__five--temp {
@@ -257,6 +269,12 @@ footer {
     .city__one--humidity, .city__one--wind, .city__two--humidity, .city__two--wind, .city__three--humidity, .city__three--wind, .city__four--humidity, .city__four--wind, .city__five--humidity, .city__five--wind {
         opacity: 0;
     }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+
 }
 
 
