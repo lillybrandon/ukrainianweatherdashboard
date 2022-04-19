@@ -64,7 +64,7 @@ h1 {
 .weather__cards {
     height: calc(100vh - 190px);
     display: grid;
-    background-image: url("images/weather.jpg");
+    background-image: url('images/weather.jpg');
     background-repeat: none;
     background-size: cover;
 }
