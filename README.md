@@ -23,8 +23,5 @@ HTML, CSS, JavaScript
   <li>Brandon Lily (https://github.com/lillybrandon)</a></li>
   <li>Kobe Lovan (https://github.com/kobelovan)</li>
  </ul>
-<a href="https://github.com/kobelovan/browsercalculator/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kobelovan/browsercalculator" />
-</a>
 
 Made with [contrib.rocks](https://contrib.rocks).
