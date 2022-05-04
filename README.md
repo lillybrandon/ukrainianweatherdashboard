@@ -24,4 +24,3 @@ HTML, CSS, JavaScript
   <li>Kobe Lovan (https://github.com/kobelovan)</li>
  </ul>
 
-Made with [contrib.rocks](https://contrib.rocks).
