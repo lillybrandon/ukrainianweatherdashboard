@@ -8,7 +8,7 @@
 ## About ❗
 A real time weather dashboard that shows you the current temp, a brief description, humidity, and wind speeds of 5 Ukrainian cities.
 
-## How to use the Browser Calculator ❔
+## How to use the Ukranian Weather Dashboard ❔
 
 <ol>
   <li>Open source code into your preferred browser</li>
