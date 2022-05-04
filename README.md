@@ -6,3 +6,25 @@
 
 
 ## About ❗
+A real time weather dashboard that shows you the current temp, a brief description, humidity, and wind speeds of 5 Ukrainian cities.
+
+## How to use the Browser Calculator ❔
+
+<ol>
+  <li>Open source code into your preferred browser</li>
+  <li>Once opened, weather information for Kyiv, Kharkiv, Odessa, Donetsk, and Dnipro are available for viewing</li>
+ </ol>
+ 
+  ## Languages Used 💻
+HTML, CSS, JavaScript
+
+## Authors 📚
+<ul>
+  <li>Brandon Lily (https://github.com/lillybrandon)</a></li>
+  <li>Kobe Lovan (https://github.com/kobelovan)</li>
+ </ul>
+<a href="https://github.com/kobelovan/browsercalculator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kobelovan/browsercalculator" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
